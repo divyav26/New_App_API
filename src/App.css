@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background-color: hsl(0, 100%, 99%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header{
+    width: 100%;
+    background: #000;
+    color: #fff;
+    height: 15vh;
+    padding: 20px 5%;
+    margin-bottom: 2rem;  
+     
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.content{
+    display: flex;
+    justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.content input{
+    width: 40%;
+    border-radius: 5px;
+    border: 1px solid gray;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+.new_articles{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 20px 5%;
+    /* background: red; */
+    height: 100vh;
+    width: 100%;
+    gap: 1rem;
+
+}
+
+.new_app{
+    margin-top: 2rem;
+    width: 80%;
+    height: 60vh;
+    background-color: lightcyan;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.img-new{
+    width: 100%;
+    height: 200px;
+    /* background-color: blue; */
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-new img{
+    
+    width: 100%;
+    height: 150px;
+    background: blue;
+}
+
+.source{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:600px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .header{
+        width: 80%;
+    }
+    
+
+    .content input{
+        width: 30%;
+        padding: 2px;
+    
+    }
+    .new_articles{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+       
+    
+    }
+
+    
 }
